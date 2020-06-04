@@ -4,8 +4,8 @@ import routes from './routes'
 import { connect } from 'react-redux'
 import './App.css';
 
-function App() {
-  console.log('Look at me!', props)
+function App(props) {
+  // console.log('Look at me!', props)
   return (
     <div className="App">
       {routes}
