@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import axios from 'axios'
 
 export default class Landing extends Component {
@@ -50,6 +51,10 @@ export default class Landing extends Component {
                         type='submit'
                         value='Login' />
                 </form>
+                <span>Don't already have an account? Register here: </span>
+                <Link to='/register'>
+                    Register
+                </Link>
             </div>
         )
     }
